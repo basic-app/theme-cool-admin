@@ -24,6 +24,11 @@ class PostButton extends Widget
 
         $options['type'] = 'submit';
 
+        if (empty($options['name']))
+        {
+            $options['name'] = 'post-button';
+        }
+
         $formOptions = $this->formOptions;
 
         $formOptions['action'] = $this->url;
