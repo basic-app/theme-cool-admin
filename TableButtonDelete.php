@@ -24,8 +24,6 @@ class TableButtonDelete extends Widget
     {
         $options = $this->options;
 
-        $options['href'] = $this->url;
-
         if ($this->label)
         {
             $options['title'] = $this->label;
@@ -78,7 +76,8 @@ class TableButtonDelete extends Widget
             'label' => $this->label,
             'tag' => $this->tag,
             'id' => $id,
-            'content' => $label
+            'content' => $label,
+            'url' => $this->url
         ]);
     }
 
