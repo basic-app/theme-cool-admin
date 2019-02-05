@@ -33,16 +33,6 @@ class TableColumn extends \PHPTheme\Widget
             'options' => [
             ]
         ],
-        'editor' => [
-            'options' => [
-                'class' => 'editor'
-            ]
-        ],
-        'code' => [
-            'options' => [
-                'class' => 'code'
-            ]
-        ],
         'number' => [
             'options' => [
                 'class' => 'text-right'
