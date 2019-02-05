@@ -19,6 +19,11 @@ class LayoutOptionsMenu extends Widget
     {
     	$items = $this->items;
 
+        if (count($items) == 0)
+        {
+            return;
+        }
+
     	foreach($items as $item)
     	{
     		$item = static::prepareItem($item);
