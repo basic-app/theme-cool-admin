@@ -33,8 +33,6 @@ class TableButtonDelete extends Widget
 
         $options['title'] = $this->label;
 
-        $label = $this->label;
-
         if ($this->icon)
         {
             $content = '<i class="' . $this->icon . '"></i>';
