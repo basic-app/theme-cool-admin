@@ -35,10 +35,12 @@ class TableColumn extends \PHPTheme\Widget
         ],
         'editor' => [
             'options' => [
+                'class' => 'editor'
             ]
         ],
         'code' => [
             'options' => [
+                'class' => 'code'
             ]
         ],
         'number' => [
