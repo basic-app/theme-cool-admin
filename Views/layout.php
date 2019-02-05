@@ -231,12 +231,17 @@
 	        <div class="container-fluid">
 	            <div class="header-mobile-inner">
 	                
-	                <!--
+	                <?php
+
+                    /*
 
 	                <a class="logo" href="index.html">
 	                    <img src="<?= admin_theme_url();?>/images/icon/logo-white.png" alt="CoolAdmin" />
 	                </a>
-					-->
+					
+                    */
+
+                    ?>
 
 	                <button class="hamburger hamburger--slider" type="button">
 	                    <span class="hamburger-box">
