@@ -2,7 +2,7 @@
 
 <?= PHPTheme::beginTag('a', $linkOptions);?>
 
-    <?= $content;?>
+    <?= $label;?>
 
 <?= PHPTheme::endTag('a');?>
 
