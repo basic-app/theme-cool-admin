@@ -40,7 +40,7 @@ class TableButtonDelete extends Widget
 
         if (!$id)
         {
-            $id = $options['href'];
+            $id = $this->url;
 
             $id = trim($id, '/');
 
