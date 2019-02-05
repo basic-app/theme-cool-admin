@@ -1,3 +1,12 @@
+<style type="text/css">
+
+.action-menu a
+{
+    margin-left: 10px;
+}
+
+</style>
+
 <?php
 
 if (count($items) == 0)
@@ -9,7 +18,7 @@ echo PHPTheme\Widgets\Menu::factory([
 	'items' => $items,
 	'tag' => 'div',
 	'options' => [
-		'class' => 'text-right'
+		'class' => 'text-right action-menu'
 	],
 	'itemOptions' => [
 		'activeOptions' => [
