@@ -22,12 +22,16 @@ class TableButtonDelete extends Widget
 
     public function render()
     {
+        $label = $this->label;
+
+        if (!$label)
+        {
+            $label = PHPTheme::t('Delete');
+        }
+
         $options = $this->options;
 
-        if ($this->label)
-        {
-            $options['title'] = $this->label;
-        }
+        $options['title'] = $this->label;
 
         $label = $this->label;
 

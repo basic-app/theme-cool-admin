@@ -20,6 +20,10 @@ class PostButton extends Widget
 
     public function render()
     {
+        $options = $this->options;
+
+        $options['type'] = 'submit';
+
         $formOptions = $this->formOptions;
 
         $formOptions['action'] = $this->url;
@@ -28,7 +32,7 @@ class PostButton extends Widget
 
         return PHPTheme::view('post-button', [
             'tag' => $this->tag,
-            'options' => $this->options,
+            'options' => $options,
             'label' => $this->label,
             'url' => $this->url,
             'formOptions' => $formOptions
