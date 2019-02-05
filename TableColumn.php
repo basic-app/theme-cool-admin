@@ -47,7 +47,12 @@ class TableColumn extends \PHPTheme\Widget
             'options' => [
                 'style' => 'width: 1%; padding-left: 10px;'
             ]
-        ]
+        ],
+        'link' => [
+            'options' => [
+                'style' => 'width: 1%; padding-left: 10px;'
+            ]
+        ]    
     ];
 
     public $tag = 'td';
