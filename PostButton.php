@@ -24,7 +24,7 @@ class PostButton extends Widget
 
         $formOptions['action'] = $this->url;
 
-        $formOptions['method'] => 'POST';
+        $formOptions['method'] = 'POST';
 
         return PHPTheme::view('post-button', [
             'tag' => $this->tag,
