@@ -63,13 +63,17 @@
 	    <div class="section__content section__content--p35">
 	        <div class="header3-wrap">                            
 	            <div class="header__logo">
-	            	<!--
+	            	<?php
+
+                    /*
 	                <a href="<?= site_url('admin');?>" style="color: #ccc;">           
 	                	        
 	                    <img src="<?= admin_theme_url();?>/images/icon/logo-white.png" alt="CoolAdmin" />
 	                				
 	                </a>
-	                -->
+	                */
+
+                    ?>
 	            </div>
 	            <div class="header__navbar">
 
