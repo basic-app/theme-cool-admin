@@ -37,7 +37,11 @@ class TableButtonDelete extends Widget
 
         if ($this->icon)
         {
-            $label = '<i class="' . $this->icon . '"></i>';
+            $content = '<i class="' . $this->icon . '"></i>';
+        }
+        else
+        {
+            $content = $label;
         }
 
         $id = $this->id;
@@ -77,10 +81,10 @@ class TableButtonDelete extends Widget
 
         return PHPTheme::view('table-button-delete', [
             'options' => $options,
-            'label' => $this->label,
+            'label' => $label,
             'tag' => $this->tag,
             'id' => $id,
-            'content' => $label,
+            'content' => $content,
             'url' => $this->url
         ]);
     }
