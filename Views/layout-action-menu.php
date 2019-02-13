@@ -27,7 +27,7 @@ echo PHPTheme\Widgets\Menu::factory([
 		'linkOptions' => [
 			'class' => 'btn btn-secondary'
 		],
-		'iconTemplate' => '<i class="zmdi zmdi-{icon}"></i><span class="bot-line"></span> <span class="d-none d-sm-inline">{label}</span>',
+		'iconTemplate' => '<i class="{icon}"></i><span class="bot-line"></span> <span class="d-none d-sm-inline">{label}</span>',
 		'template' => '{label}'
 	]
 ])->render();
