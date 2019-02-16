@@ -16,6 +16,8 @@ class Form extends Widget
 
 	protected $errors = [];
 
+    protected $messages = [];
+
 	protected $buttons = [];
 
 	protected $options = [];
@@ -86,7 +88,8 @@ class Form extends Widget
 			'options' => $options,
 			'fields' => $fields, 
 			'errors' => $this->errors,
-			'buttons' => $buttons
+			'buttons' => $buttons,
+            'messages' => $this->messages
 		]);
 	}
 

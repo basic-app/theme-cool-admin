@@ -2,6 +2,12 @@
 
 echo PHPTheme::beginTag('form', $options);
 
+foreach($messages as $message)
+{
+    echo PHPTheme::widget('alert', ['type' => 'info', 'message' => $message]);
+}
+
+
 foreach($fields as $field)
 {
 	echo $field;
