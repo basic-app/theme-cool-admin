@@ -17,7 +17,7 @@
 <!-- Bootstrap CSS-->
 <link href="<?= PHPTheme::url('vendor/bootstrap-4.1/bootstrap.min.css');?>" rel="stylesheet" media="all">
 <!-- Vendor CSS-->
-<!--<link href="<?= PHPTheme::url();?>/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">-->
+<link href="<?= PHPTheme::url('vendor/animsition/animsition.min.css');?>" rel="stylesheet" media="all">
 <link href="<?= PHPTheme::url('vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css');?>" rel="stylesheet" media="all">
 <link href="<?= PHPTheme::url('vendor/wow/animate.css');?>" rel="stylesheet" media="all">
 <link href="<?= PHPTheme::url('vendor/css-hamburgers/hamburgers.min.css');?>" rel="stylesheet" media="all">
