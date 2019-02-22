@@ -26,7 +26,6 @@
 <link href="<?= PHPTheme::url('vendor/perfect-scrollbar/perfect-scrollbar.css');?>" rel="stylesheet" media="all">
 <!-- Main CSS-->
 <link href="<?= PHPTheme::url('css/theme.css');?>" rel="stylesheet" media="all">
-<link href="<?= PHPTheme::url('css/custom.css');?>" rel="stylesheet" media="all">
 <!-- Jquery JS-->
 <script src="<?= PHPTheme::url('vendor/jquery-3.2.1.min.js');?>"></script>
 <!-- Bootstrap JS-->
@@ -372,7 +371,6 @@
     </div>
 </div>
 <!-- Main JS-->
-<script src="<?= PHPTheme::url('js/main.custom.js');?>"></script>
 <?php PHPTheme::pageBodyEnd();?>
 </body>
 </html>
