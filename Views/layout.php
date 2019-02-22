@@ -371,6 +371,7 @@
     </div>
 </div>
 <!-- Main JS-->
+<script src="<?= PHPTheme::url('js/main.js');?>"></script>
 <?php PHPTheme::pageBodyEnd();?>
 </body>
 </html>
