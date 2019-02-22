@@ -17,7 +17,9 @@
 <!-- Bootstrap CSS-->
 <link href="<?= PHPTheme::url('vendor/bootstrap-4.1/bootstrap.min.css');?>" rel="stylesheet" media="all">
 <!-- Vendor CSS-->
+<!--
 <link href="<?= PHPTheme::url('vendor/animsition/animsition.min.css');?>" rel="stylesheet" media="all">
+-->
 <link href="<?= PHPTheme::url('vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css');?>" rel="stylesheet" media="all">
 <link href="<?= PHPTheme::url('vendor/wow/animate.css');?>" rel="stylesheet" media="all">
 <link href="<?= PHPTheme::url('vendor/css-hamburgers/hamburgers.min.css');?>" rel="stylesheet" media="all">
@@ -34,7 +36,7 @@
 <!-- Vendor JS       -->
 <script src="<?= PHPTheme::url('vendor/slick/slick.min.js');?>"></script>
 <script src="<?= PHPTheme::url('vendor/wow/wow.min.js');?>"></script>
-<!--<script src="<?= PHPTheme::url('vendor/animsition/animsition.min.js');?>"></script>-->  
+<script src="<?= PHPTheme::url('vendor/animsition/animsition.min.js');?>"></script> 
 <script src="<?= PHPTheme::url('vendor/bootstrap-progressbar/bootstrap-progressbar.min.js');?>"></script>
 <script src="<?= PHPTheme::url('vendor/counter-up/jquery.waypoints.min.js');?>"></script>
 <script src="<?= PHPTheme::url('vendor/counter-up/jquery.counterup.min.js');?>"></script>
