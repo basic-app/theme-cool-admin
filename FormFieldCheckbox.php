@@ -10,4 +10,6 @@ class FormFieldCheckbox extends FormFieldText
 
 	protected $viewName = 'form-field-checkbox';
 
+    protected $defaultClass = null;
+
 }

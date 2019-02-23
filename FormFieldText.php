@@ -22,6 +22,8 @@ class FormFieldText extends Widget
 
 	protected $viewName = 'form-field-text';
 
+    protected $defaultClass = 'form-control';
+
 	public function render()
 	{
 		$options = $this->options;
@@ -33,9 +35,9 @@ class FormFieldText extends Widget
 			$value = '';
 		}
 
-		if (!array_key_exists('class', $options))
+		if (!array_key_exists('class', $options) && $this->defaultClass)
 		{
-			$options['class'] = 'form-control';
+			$options['class'] = $this->defaultClass;
 		}
 
 		if ($this->error)

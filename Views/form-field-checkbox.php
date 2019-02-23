@@ -1,12 +1,14 @@
 <div class="form-group">
-    <?php if($label):?><label><?= $label;?></label><?php endif;?>
+    <?php if($label):?><label><?= $label;?></label><br><?php endif;?>
     <?php
-        $options['value'] = 1;
 
         if ($value == 1)
         {
             $options['checked'] = 'checked';
         }
+
+        $value = 1;
+
         echo PHPTheme::input($name, $value, $options, 'checkbox');
     ?>
 </div>
