@@ -1,16 +1,12 @@
-<?php
+<div class="form-group">
+    <?php if($label):?><label><?= $label;?></label><?php endif;?>
+    <?php
+        $options['value'] = 1;
 
-echo PHPTheme::input($name, $value, $options, 'checkbox');
-
-/*
-
-<div class="login-checkbox">
-<label>
-<input type="checkbox" name="remember">Remember Me
-</label>
-<label>
-<a href="#">Forgotten Password?</a>
-</label>
+        if ($value == 1)
+        {
+            $options['checked'] = 'checked';
+        }
+        echo PHPTheme::input($name, $value, $options, 'checkbox');
+    ?>
 </div>
-
-*/
