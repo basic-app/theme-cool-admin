@@ -52,7 +52,7 @@ class FormFieldText extends Widget
 			}
 		}
 
-		return PHPTheme::view($this->viewName, [
+		return $this->view($this->viewName, [
 			'name' => $this->name,
 			'label' => $this->label,
 			'error' => $this->error,

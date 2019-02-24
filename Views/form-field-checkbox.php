@@ -9,6 +9,11 @@
 
         $value = 1;
 
+        if ($uncheckValue !== null)
+        {
+            echo PHPTheme::input($name, $uncheckValue, [], 'hidden');
+        }
+
         echo PHPTheme::input($name, $value, $options, 'checkbox');
     ?>
 </div>
