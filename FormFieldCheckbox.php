@@ -14,7 +14,7 @@ class FormFieldCheckbox extends FormFieldText
 
     protected $uncheckValue = 0;
 
-    protected function view(string $template, array $params = [])
+    public function view(string $template, array $params = [])
     {
         $params['uncheckValue'] = $this->uncheckValue;
 
