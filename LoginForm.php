@@ -12,7 +12,10 @@ class LoginForm extends Form
 	{
 		foreach($params['fields'] as $key => $field)
 		{
-			$params['fields'][$key]['options']['class'] = 'form-control au-input au-input--full';
+			if ($field['name'] != 'remember_me')
+			{
+				$params['fields'][$key]['options']['class'] = 'form-control au-input au-input--full';
+			}
 		}
 
 		$params['buttons']['submit']['options']['class'] = 'au-btn au-btn--green';
