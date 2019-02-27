@@ -14,9 +14,13 @@ class FormFieldCheckbox extends FormFieldText
 
     protected $uncheckValue = 0;
 
+    protected $separator = '<br>';
+
     public function view(string $template, array $params = [])
     {
         $params['uncheckValue'] = $this->uncheckValue;
+
+        $params['separator'] = $this->separator;
 
         return parent::view($template, $params);
     }

@@ -16,6 +16,10 @@ class LoginForm extends Form
 			{
 				$params['fields'][$key]['options']['class'] = 'form-control au-input au-input--full';
 			}
+			else
+			{
+				$params['fields'][$key]['separator'] = '';
+			}
 		}
 
 		$params['buttons']['submit']['options']['class'] = 'au-btn au-btn--green';
