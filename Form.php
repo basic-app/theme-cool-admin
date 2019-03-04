@@ -46,7 +46,7 @@ class Form extends Widget
 
 		if ($this->method && !array_key_exists('method', $options))
 		{
-			$options['method'] = 'POST';
+			$options['method'] = $this->method;
 		}
 
 		if ($this->url && !array_key_exists('action', $options))
