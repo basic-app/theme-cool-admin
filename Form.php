@@ -58,6 +58,13 @@ class Form extends Widget
 
 		foreach($this->fields as $key => $field)
 		{
+            if (is_string($field))
+            {
+                $fields[] = $field;
+
+                continue;
+            }
+
 			if ($this->setErrors)
 			{
 				foreach($this->errors as $name => $error)
