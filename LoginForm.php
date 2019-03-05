@@ -18,7 +18,7 @@ class LoginForm extends Form
 			}
 			else
 			{
-				$params['fields'][$key]['separator'] = '';
+				$params['fields'][$key]['separator'] = '<br>';
 			}
 		}
 
