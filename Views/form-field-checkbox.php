@@ -1,5 +1,5 @@
 <div class="form-group">
-    <?php if($label):?><label><?= $label;?></label><?= $separator;?><?php endif;?>
+    <?php if($label):?><label><?= $label;?><?= $separator;?><?php endif;?>
     <?php
 
         if ($value == 1)
@@ -16,4 +16,6 @@
 
         echo PHPTheme::input($name, $value, $options, 'checkbox');
     ?>
+
+    <?php if($label):?></label><?php endif;?>
 </div>
