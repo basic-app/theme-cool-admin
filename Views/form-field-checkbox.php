@@ -1,5 +1,5 @@
 <div class="form-group">
-    <?php if($label):?><label style="margin-bottom: 0px; line-height: 1;"><span style="line-height: 1.5; margin-bottom: .5rem;"><?= $label;?></span><?= $separator;?><?php endif;?>
+    <?php if($label):?><label style="margin-bottom: 0px; line-height: 1;"><span style="display: block; line-height: 1.5; margin-bottom: .5rem;"><?= $label;?></span><?php endif;?>
     <?php
 
         if ($value == 1)
