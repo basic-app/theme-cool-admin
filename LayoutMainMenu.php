@@ -16,7 +16,7 @@ class LayoutMainMenu extends Widget
         {
             if(!empty($value['items']))
             {
-                $items[$key]['options'] = PHPTheme::mergeHtmlOptions($items[$key]['options'], ['class' => 'has-sub']);
+                $items[$key]['options'] = PHPTheme::mergeHtmlOptions(isset($items[$key]['options']) ? $items[$key]['options'] : [], ['class' => 'has-sub']);
             }
         }
 
