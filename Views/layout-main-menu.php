@@ -21,7 +21,7 @@
 			'options' => [
 				'class' => 'header3-sub-list list-unstyled'
 			],
-			'item' => [
+			'itemOptions' => [
 				'tag' => 'li'
 			]
 		]
