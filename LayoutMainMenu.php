@@ -12,6 +12,14 @@ class LayoutMainMenu extends Widget
 
 	public static function prepareItems($items)
 	{
+        foreach($items as $key => $value)
+        {
+            if(!empty($value['items']))
+            {
+                $items[$key]['options'] = PHPTheme::mergeOptions($items[$key]['options'], ['class' => 'has-sub']);
+            }
+        }
+
 		return $items;
 	}
 
