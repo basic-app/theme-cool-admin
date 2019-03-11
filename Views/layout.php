@@ -48,10 +48,25 @@
 .header-mobile-2.header-mobile .navbar-mobile
 {
     top: 66px;
-}	
+}
+
 .table-data3 tbody tr td:last-child
 {
     padding-right: 20px;
+}
+
+@media (max-width: 1315px) and (min-width: 992px)
+{
+    .header__navbar ul li a i
+    {
+        min-width: 20px;
+    }
+}
+
+.account-item--style2 .image
+{
+    border: 2px solid #ccc;
+
 }
 </style>
 <?php PHPTheme::pageHead();?>
