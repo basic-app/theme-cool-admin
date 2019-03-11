@@ -70,8 +70,8 @@
 }
 
 .account-dropdown__item a i {
-    min-width: 20px;
-    margin-right: 10px;
+    min-width: 25px;
+    margin-right: 5px;
 }
 </style>
 <?php PHPTheme::pageHead();?>
