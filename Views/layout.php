@@ -61,12 +61,11 @@
     {
         min-width: 20px;
     }
-}
-
-.account-item--style2 .image
-{
-    border: 2px solid #ccc;
-
+    
+    .account-item--style2 > .image
+    {
+        border: 2px solid #ccc;
+    }
 }
 
 .account-dropdown__item a i {
