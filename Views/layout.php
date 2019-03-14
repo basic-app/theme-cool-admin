@@ -45,25 +45,22 @@
 <script src="<?= PHPTheme::url('vendor/chartjs/Chart.bundle.min.js');?>"></script>
 <script src="<?= PHPTheme::url('vendor/select2/select2.min.js');?>"></script>
 <style type="text/css">
-.header-mobile-2.header-mobile .navbar-mobile
-{
+
+.header-mobile-2.header-mobile .navbar-mobile {
     top: 66px;
 }
 
-.table-data3 tbody tr td:last-child
-{
+.table-data3 tbody tr td:last-child {
     padding-right: 20px;
 }
 
-@media (max-width: 1315px) and (min-width: 992px)
+@media (min-width: 992px)
 {
-    .header__navbar ul li a i
-    {
+    .header__navbar ul li a i {
         min-width: 20px;
     }
     
-    .account-item--style2 > .image
-    {
+    .account-item--style2 > .image {
         border: 2px solid #ccc;
     }
 }
@@ -72,6 +69,7 @@
     min-width: 25px;
     margin-right: 5px;
 }
+
 </style>
 <?php PHPTheme::pageHead();?>
 </head>
