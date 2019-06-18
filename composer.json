@@ -1,38 +1,8 @@
 {
     "name": "basic-app/theme-cool-admin",
-    "require": {
-        "yiisoft/yii2-composer": "^2.0"
-    },
     "autoload": {
         "psr-4": {
             "Theme\\CoolAdmin\\": ""
         }
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "yii\\composer\\Installer::postInstall"
-        ]
-    },    
-    "extra": {
-        "yii\\composer\\Installer::postInstall": {
-            "copyFiles": [
-                {
-                   "vendor/basic-app/theme-cool-admin-assets": "public/components/cool" 
-                }
-            ]
-        }
-    },
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "basic-app/theme-cool-admin-assets",
-                "source": {
-                    "url": "https://github.com/puikinsh/CoolAdmin",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
-        }
-    ]
+    }
 }
