@@ -4,5 +4,8 @@
         "psr-4": {
             "Theme\\CoolAdmin\\": ""
         }
-    }
+    },
+    "require": {
+        "yiisoft/yii2-composer": "^2.0"
+    }    
 }
