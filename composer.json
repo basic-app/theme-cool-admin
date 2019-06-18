@@ -6,6 +6,21 @@
         }
     },
     "require": {
-        "yiisoft/yii2-composer": "^2.0"
-    }    
+        "yiisoft/yii2-composer": "^2.0",
+        "basic-app/theme-cool-admin-assets": "1.0"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "basic-app/theme-cool-admin-assets",
+                "version": "1.0",
+                "source": {
+                    "url": "https://github.com/puikinsh/CoolAdmin",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ]
 }
