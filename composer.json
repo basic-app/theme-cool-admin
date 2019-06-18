@@ -11,16 +11,9 @@
     },
     "repositories": [
         {
-            "type": "package",
-            "package": {
-                "name": "basic-app/theme-cool-admin-assets",
-                "version": "1.0",
-                "source": {
-                    "url": "https://github.com/puikinsh/CoolAdmin",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
+            "type": "git",
+            "version": "1.0",
+            "url": "https://github.com/puikinsh/CoolAdmin"
         }
     ]
 }
