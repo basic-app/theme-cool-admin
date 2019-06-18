@@ -28,7 +28,6 @@
             "type": "package",
             "package": {
                 "name": "basic-app/theme-cool-admin-assets",
-                "version": "dev-master",
                 "source": {
                     "url": "https://github.com/puikinsh/CoolAdmin",
                     "type": "git",
