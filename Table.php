@@ -1,35 +1,42 @@
 <?php
 
-namespace Theme\CoolAdmin;
+namespace BasicApp\CoolAdminTheme;
 
-use PHPTheme;
+use BasicApp\Core\Html;
 
-class Table extends \PHPTheme\Widget
+class Table extends \PhpTheme\CoolAdminTheme\Table
 {
 
-    public $class = 'table table-borderless table-data3'; //_table-striped _table-earning
+    const COLUMN = TableColumn::class;
 
-    public $head = [];
+//    public $defaultPrimaryColumn = [];
 
-    public $rows = [];
+//    public $defaultTextColumn = [];
 
-    public $options = [];
+//    public $defaultNumberColumn = [];
 
-    public function render()
+    /*
+    public function primaryColumn(array $options = [])
     {
-        $options = $this->options;
+        $options = Html::mergeOptions($this->defaultPrimaryColumn, $options);
 
-        $options['class'] = $this->class;
+        return $this->createColumn($options);
+    }
 
-        //print_r($this->rows);
+    public function textColumn(array $options = [])
+    {
+        $options = Html::mergeOptions($this->defaultTextColumn, $options);
 
-        //die;
+        return $this->createColumn($options);
+    }
 
-        return PHPTheme::view('table', [
-            'head' => $this->head,
-            'rows' => $this->rows,
-            'options' => $options
-        ]);
+    public function numberColumn(array $options = [])
+    {
+        $options = Html::mergeOptions($this->defaultNumberColumn, $options);
+
+        return $this->createColumn($options);
     }
     
+    */
+
 }

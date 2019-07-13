@@ -1,103 +1,47 @@
 <?php
 
-namespace Theme\CoolAdmin;
+namespace BasicApp\CoolAdminTheme;
 
-use PHPTheme;
-use PHPTheme\Widget;
+use BasicApp\Core\Html;
 
-class Form extends Widget
+class Form extends \BasicApp\Core\ModelForm
 {
 
-	protected $url;
+    public $defaultEditorTextareaOptions = [];
 
-	protected $method = 'POST';
+    public $defaultImageUploadOptions = [];
 
-	protected $fields = [];
+    public $defaultFileUploadOptions = [];
 
-	protected $errors = [];
+    public $defaultSubmitOptions = ['class' => 'au-btn au-btn--green'];
 
-    protected $messages = [];
+    public $defaultInputOptions = ['class' => 'form-control'];
 
-	protected $buttons = [];
+    public $defaultCheckboxOptions = ['style' => 'display: block;'];
 
-	protected $options = [];
+    public $defaultPasswordOptions = ['class' => 'form-control'];
 
-	protected $setErrors = true;
+    public $defaultGroupOptions = ['class' => 'form-group'];
 
-	protected function renderField($field)
-	{
-		$type = 'text';
+    public function editorTextarea($attribute, array $options = [], $groupOptions = [])
+    {
+        $options = Html::mergeOptions($this->defaultEditorTextareaOptions, $options);
 
-		if (array_key_exists('type', $field))
-		{
-			$type = $field['type'];
+        return $this->textarea($attribute, $options, $groupOptions);
+    }
 
-			unset($field['type']);
-		}
+    public function imageUpload($attribute, $filename = null, array $options = [], $groupOptions = [])
+    {
+        $options = Html::mergeOptions($this->defaultImageUploadOptions, $options);
 
-		$name = 'formField' . ucfirst($type);
+        return $this->upload($attribute, $options, $groupOptions);
+    }
 
-		return PHPTheme::widget($name, $field);
-	}
+    public function fileUpload($attribute, $filename = null, array $options = [], $groupOptions = [])
+    {
+        $options = Html::mergeOptions($this->defaultFileUploadOptions, $options);
 
-	public function render()
-	{
-		$options = $this->options;
-
-		if ($this->method && !array_key_exists('method', $options))
-		{
-			$options['method'] = $this->method;
-		}
-
-		if ($this->url && !array_key_exists('action', $options))
-		{
-			$options['action'] = $this->url;
-		}
-
-		$fields = [];
-
-		foreach($this->fields as $key => $field)
-		{
-            if (is_string($field))
-            {
-                $fields[] = $field;
-
-                continue;
-            }
-
-			if ($this->setErrors)
-			{
-				foreach($this->errors as $name => $error)
-				{
-					if ($field['name'] == $name)
-					{
-						$field['error'] = $error;
-
-						continue;
-					}
-				}
-			}
-
-			$fields[] = static::renderField($field);
-		}
-
-		$buttons = $this->buttons;
-
-		if (array_key_exists('submit', $buttons) && array_key_exists('options', $buttons['submit']))
-		{
-			if (!array_key_exists('class', $buttons['submit']['options']))
-			{
-				$buttons['submit']['options']['class'] = 'btn btn-primary';
-			}
-		}
-
-		return PHPTheme::view('form', [
-			'options' => $options,
-			'fields' => $fields, 
-			'errors' => $this->errors,
-			'buttons' => $buttons,
-            'messages' => $this->messages
-		]);
-	}
+        return $this->upload($attribute, $options, $groupOptions);
+    }
 
 }
