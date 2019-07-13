@@ -7,7 +7,12 @@ use BasicApp\Core\Html;
 class TableColumn extends \PhpTheme\CoolAdminTheme\TableColumn
 {
 
-    public $numberOptions = ['style' => ['text-align' => 'right']];
+    public $numberOptions = [
+        'style' => [
+            'text-align' => 'right',
+            'width' => '1%'
+        ]
+    ];
 
     public $displayExtraSmallOptions = ['class' => ['d-none', 'd-table-cell']];
 
