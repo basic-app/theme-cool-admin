@@ -2,7 +2,7 @@
 
 namespace BasicApp\CoolAdminTheme;
 
-use BasicApp\Core\Html;
+use PhpTheme\Helpers\Html;
 
 class Form extends \BasicApp\Core\ModelForm
 {
