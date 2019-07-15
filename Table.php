@@ -13,9 +13,37 @@ class Table extends \PhpTheme\CoolAdminTheme\Table
 
     const TABLE_DELETE_BUTTON_COLUMN = TableDeleteButtonColumn::class;
 
-    public $defaultUpdateButtonColumn = [];
+    public $defaultUpdateButtonColumn = [
+        'options' => [
+            'style' => [
+                'padding' => '0px 12px',
+                'vertical-align' => 'middle'
+            ]
+        ],
+        'headerOptions' => [
+            'style' => [
+                'width' => '1%',
+                'padding' => '0px 12px',
+                'vertical-align' => 'middle'                
+            ]
+        ]
+    ];
 
-    public $defaultDeleteButtonColumn = [];
+    public $defaultDeleteButtonColumn = [
+        'options' => [
+            'style' => [
+                'padding' => '0px 20px',
+                'vertical-align' => 'middle'
+            ]
+        ],
+        'headerOptions' => [
+            'style' => [
+                'width' => '1%',
+                'padding' => '0px 12px',
+                'vertical-align' => 'middle'                
+            ]
+        ]
+    ];
 
     public function updateButtonColumn(array $options = [])
     {

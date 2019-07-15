@@ -7,11 +7,17 @@ use PhpTheme\Helpers\Html;
 class Form extends \BasicApp\Core\ModelForm
 {
 
-    public $defaultEditorTextareaOptions = [];
+    public $defaultLabelOptions = ['class' => 'form-control-label'];
 
-    public $defaultImageUploadOptions = [];
+    public $defaultDropdownOptions = ['class' => 'form-control'];
 
-    public $defaultFileUploadOptions = [];
+    public $defaultEditorTextareaOptions = ['class' => 'form-control editor'];
+
+    public $defaultUploadOptions = ['class' => 'form-control-file'];
+
+    public $defaultImageUploadOptions = ['class' => 'form-control-file'];
+
+    public $defaultFileUploadOptions = ['class' => 'form-control-file'];
 
     public $defaultSubmitOptions = ['class' => 'au-btn au-btn--green'];
 
@@ -22,6 +28,14 @@ class Form extends \BasicApp\Core\ModelForm
     public $defaultPasswordOptions = ['class' => 'form-control'];
 
     public $defaultGroupOptions = ['class' => 'form-group'];
+
+    public $defaultImagePreviewOptions = [];
+
+    public $defaultFilePreviewOptions = [];
+
+    const IMAGE_PREVIEW = ImagePreview::class;
+
+    const FILE_PREVIEW = FilePreview::class;
 
     public function editorTextarea($attribute, array $options = [], $groupOptions = [])
     {
@@ -34,6 +48,11 @@ class Form extends \BasicApp\Core\ModelForm
     {
         $options = Html::mergeOptions($this->defaultImageUploadOptions, $options);
 
+        if (!array_key_exists('suffix', $groupOptions))
+        {
+            $groupOptions['suffix'] = $this->imagePreview(['url' => $filename]);
+        }
+
         return $this->upload($attribute, $options, $groupOptions);
     }
 
@@ -41,7 +60,26 @@ class Form extends \BasicApp\Core\ModelForm
     {
         $options = Html::mergeOptions($this->defaultFileUploadOptions, $options);
 
+        if (!array_key_exists('suffix', $groupOptions))
+        {
+            $groupOptions['suffix'] = $this->filePreview(['url' => $filename]);
+        }
+
         return $this->upload($attribute, $options, $groupOptions);
+    }
+
+    public function imagePreview(array $options)
+    {
+        $options = Html::mergeOptions($this->defaultImagePreviewOptions, $options);
+
+        return $this->theme->widget(static::IMAGE_PREVIEW, $options);
+    }
+
+    public function filePreview(array $options)
+    {
+        $options = Html::mergeOptions($this->defaultFilePreviewOptions, $options);
+
+        return $this->theme->widget(static::FILE_PREVIEW, $options);
     }
 
 }
