@@ -4,7 +4,7 @@ namespace BasicApp\CoolAdminTheme;
 
 use PhpTheme\Helpers\Html;
 
-class Form extends \BasicApp\Core\ModelForm
+class Form extends \BasicApp\Core\Form
 {
 
     public $defaultLabelOptions = ['class' => 'form-control-label'];
