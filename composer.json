@@ -1,6 +1,7 @@
 {
     "name": "basic-app/theme-cool-admin",
     "require": {
+        "basic-app/theme" : "dev-master",
         "phptheme/theme-cool-admin": "dev-master"
     },
     "autoload": {
