@@ -2,13 +2,10 @@
 
 namespace BasicApp\CoolAdminTheme;
 
-use BasicApp\Theme\ThemeTrait;
 use PhpTheme\Helpers\Html;
 
 class Theme extends \PhpTheme\CoolAdminTheme\Theme
 {
-
-    use ThemeTrait;
 
     protected $tableClass = Table::class;
     
