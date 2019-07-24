@@ -4,7 +4,7 @@ namespace BasicApp\CoolAdminTheme;
 
 use PhpTheme\Helpers\Html;
 
-class Theme extends \PhpTheme\CoolAdminTheme\Theme
+class Theme extends ThemeAbstract
 {
 
     protected $tableClass = Table::class;
@@ -15,7 +15,7 @@ class Theme extends \PhpTheme\CoolAdminTheme\Theme
     {
         parent::__construct();
 
-        $this->head .= Html::linkCss('/CoolAdmin/custom.css'); 
+        $this->head .= Html::linkCss('/themes/colorlib-cool-admin/custom.css'); 
     }
 
 }
