@@ -15,7 +15,7 @@ class Theme extends ThemeAbstract
     {
         parent::__construct();
 
-        $this->head .= Html::linkCss('/themes/colorlib-cool-admin/custom.css'); 
+        $this->head .= Html::linkCss($this->baseUrl . '/custom.css'); 
     }
 
 }
