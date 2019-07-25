@@ -8,6 +8,6 @@ BasicApp\System\SystemEvents::onInstall(function() {
 
 BasicApp\Admin\AdminEvents::onAdminThemeList(function($event) {
 
-    $event->return['BasicApp\CoolAdminTheme\Theme'] = 'Colorlib - Cool Admin';
+    $event->result['BasicApp\CoolAdminTheme\Theme'] = 'Colorlib - Cool Admin';
 
 });
