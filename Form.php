@@ -9,6 +9,8 @@ class Form extends \BasicApp\Theme\Form
 
     public $defaultErrorOptions = ['class' => 'alert alert-danger'];
 
+    public $defaultMessageOptions = ['class' => 'alert alert-info'];
+
     public $defaultLabelOptions = ['class' => 'form-control-label'];
 
     public $defaultDropdownOptions = ['class' => 'form-control'];
