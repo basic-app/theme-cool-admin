@@ -7,6 +7,8 @@ use PhpTheme\Helpers\Html;
 class Theme extends ThemeAbstract
 {
 
+    const PAGER = Pager::class;
+
     protected $tableClass = Table::class;
     
     protected $formClass = Form::class;
