@@ -176,3 +176,8 @@ body
     cursor: pointer;
     */
 }
+
+.header3-wrap .header__navbar
+{
+    left: 250px;
+}
