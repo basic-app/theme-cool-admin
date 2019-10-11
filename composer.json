@@ -1,6 +1,8 @@
 {
     "name": "basic-app/theme-cool-admin",
     "require": {
+        "basic-app/core": "dev-master",
+        "basic-app/system": "dev-master",
         "basic-app/theme" : "dev-master",
         "phptheme/theme-cool-admin": "dev-master"
     },
