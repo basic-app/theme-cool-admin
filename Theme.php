@@ -9,9 +9,9 @@ class Theme extends ThemeAbstract
 
     const PAGER = Pager::class;
 
+    const FORM = Form::class;
+
     protected $tableClass = Table::class;
-    
-    protected $formClass = Form::class;
 
     public function __construct()
     {
