@@ -2,22 +2,22 @@
 
 namespace BasicApp\CoolAdminTheme;
 
-use PhpTheme\Helpers\Html;
+use PhpTheme\Html\HtmlHelper;
 
-class Theme extends ThemeAbstract
+class Theme extends \PhpTheme\CoolAdminTheme\Theme
 {
+
+    public $baseUrl = '/themes/colorlib-cool-admin';
 
     const PAGER = Pager::class;
 
     const FORM = Form::class;
 
-    protected $tableClass = Table::class;
-
     public function __construct()
     {
         parent::__construct();
 
-        $this->head .= Html::linkCss($this->baseUrl . '/custom.css'); 
+        $this->head .= HtmlHelper::linkCss($this->baseUrl . '/custom.css'); 
     }
 
 }
