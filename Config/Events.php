@@ -2,7 +2,6 @@
 
 use BasicApp\Helpers\CliHelper;
 use BasicApp\System\SystemEvents;
-use BasicApp\Admin\AdminEvents;
 
 SystemEvents::onUpdate(function() {
 
@@ -34,7 +33,7 @@ SystemEvents::onUpdate(function() {
     CliHelper::copy(dirname(__DIR__) . '/custom.css', $themeDir . DIRECTORY_SEPARATOR . 'custom.css');
 });
 
-AdminEvents::onAdminThemes(function($event) {
+SystemEvents::onAdminThemes(function($event) {
 
     $event->result['BasicApp\CoolAdminTheme\Theme'] = 'Cool Admin by Colorlib';
 
