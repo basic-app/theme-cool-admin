@@ -2,6 +2,7 @@
 
 use BasicApp\Helpers\CliHelper;
 use BasicApp\System\SystemEvents;
+use CodeIgniter\Events\Events;
 
 SystemEvents::onUpdate(function() {
 
@@ -33,7 +34,7 @@ SystemEvents::onUpdate(function() {
     CliHelper::copy(dirname(__DIR__) . '/custom.css', $themeDir . DIRECTORY_SEPARATOR . 'custom.css');
 });
 
-SystemEvents::onAdminThemes(function($event) {
+Events::on('ba:admin_themes', function($event) {
 
     $event->result['BasicApp\CoolAdminTheme\Theme'] = 'Cool Admin by Colorlib';
 
