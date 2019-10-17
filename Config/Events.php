@@ -8,6 +8,11 @@ SystemEvents::onUpdate(function() {
 
     $themeDir = FCPATH . 'themes' . DIRECTORY_SEPARATOR . 'colorlib-cool-admin';
 
+    if (is_dir($themeDir))
+    {
+        return;
+    }
+
     CliHelper::downloadToFile('https://codeload.github.com/puikinsh/CoolAdmin/zip/master', $themeDir . '.zip');
     
     CliHelper::zipExtractTo($themeDir . '.zip', $themeDir);
@@ -29,6 +34,8 @@ SystemEvents::onUpdate(function() {
     CliHelper::copy(dirname(__DIR__) . '/custom.css', $themeDir . DIRECTORY_SEPARATOR . 'custom.css');
 });
 
-AdminEvents::onAdminThemeList(function($event) {
+AdminEvents::onAdminThemes(function($event) {
+
     $event->result['BasicApp\CoolAdminTheme\Theme'] = 'Cool Admin by Colorlib';
+
 });
