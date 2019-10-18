@@ -17,7 +17,7 @@ SystemEvents::onUpdate(function() {
     
     CliHelper::zipExtractTo($themeDir . '.zip', $themeDir);
     
-    CliHelper::delete($themeDir . '.zip');
+    //CliHelper::delete($themeDir . '.zip');
     
     CliHelper::copy($themeDir . DIRECTORY_SEPARATOR . 'CoolAdmin-master/css', $themeDir . DIRECTORY_SEPARATOR . 'css');
     
