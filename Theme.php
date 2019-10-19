@@ -13,11 +13,18 @@ class Theme extends \PhpTheme\CoolAdminTheme\Theme
 
     const FORM = Form::class;
 
-    public function __construct()
+    public function beginLayout(array $params = [])
     {
-        parent::__construct();
+        $this->head .= HtmlHelper::linkCss($this->baseUrl . '/custom.css');
 
-        $this->head .= HtmlHelper::linkCss($this->baseUrl . '/custom.css'); 
+        return parent::beginLayout($params);
+    }
+
+    public function layout(array $params = [])
+    {
+        $this->head .= HtmlHelper::linkCss($this->baseUrl . '/custom.css');
+
+        return parent::layout($params);
     }
 
 }
