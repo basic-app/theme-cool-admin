@@ -39,7 +39,7 @@ if (class_exists(SystemEvents::class))
 
 if (class_exists(AdminEvents::class))
 {
-    AdminEvents::onTheme(function($event) {
+    AdminEvents::onThemes(function($event) {
 
         $event->result['BasicApp\CoolAdminTheme\Theme'] = 'Cool Admin by Colorlib';
 
