@@ -1,3 +1,10 @@
+@media (max-width: 1315px) and (min-width: 992px)
+{
+    .header__tool .header-button-item {
+        font-size: 30px;
+    }
+}
+
 .CodeMirror
 {
     border: 1px solid #ced4da;
