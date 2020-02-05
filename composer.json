@@ -1,9 +1,9 @@
 {
     "name": "basic-app/theme-cool-admin",
     "require": {
-        "basic-app/system" : "dev-master",
-        "basic-app/theme" : "dev-master",
-        "phptheme/theme-cool-admin": "dev-master"
+        "basic-app/system" : "*",
+        "basic-app/theme" : "*",
+        "phptheme/theme-cool-admin": "*"
     },
     "autoload": {
         "psr-4": {
