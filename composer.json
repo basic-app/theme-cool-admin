@@ -1,5 +1,6 @@
 {
     "name": "basic-app/theme-cool-admin",
+    "license": "MIT",
     "require": {
         "basic-app/system" : "*",
         "basic-app/theme" : "*",
