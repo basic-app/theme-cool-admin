@@ -1,5 +1,7 @@
 <?php
 
+use BasicApp\Themes\CoolAdmin\AdminTheme;
+use BasicApp\Themes\CoolAdmin\SiteTheme;
 use BasicApp\Helpers\CliHelper;
 use BasicApp\System\SystemEvents;
 use BasicApp\Admin\AdminEvents;
@@ -39,9 +41,16 @@ if (class_exists(SystemEvents::class))
 
 if (class_exists(AdminEvents::class))
 {
-    AdminEvents::onThemes(function($event) {
+    AdminEvents::onThemes(function($event)
+    {
+        $event->result[AdminTheme::class] = 'Cool Admin';
+    });
+}
 
-        $event->result['BasicApp\CoolAdminTheme\Theme'] = 'Cool Admin by Colorlib';
-
+if (class_exists(SiteEvents::class))
+{
+    SiteEvents::onThemes(function($event)
+    {
+        $event->result[SiteTheme::class] = 'Cool Admin';
     });
 }

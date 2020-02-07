@@ -1,6 +1,6 @@
 <?php
 
-namespace BasicApp\CoolAdminTheme;
+namespace BasicApp\Themes\CoolAdmin;
     
 class Pager extends \PhpTheme\Core\Widget
 {

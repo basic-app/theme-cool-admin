@@ -1,8 +1,6 @@
 <?php
 
-namespace BasicApp\CoolAdminTheme;
-
-use PhpTheme\Helpers\Html;
+namespace BasicApp\Themes\CoolAdmin;
 
 class Form extends \BasicApp\Theme\Form
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace BasicApp\CoolAdminTheme;
+namespace BasicApp\Themes\CoolAdmin;
 
-use PhpTheme\Html\HtmlHelper;
+use BasicApp\Helpers\HtmlHelper;
 
-class Theme extends \PhpTheme\CoolAdminTheme\Theme
+class Theme extends \PhpTheme\Themes\CoolAdmin\Theme
 {
 
     public $baseUrl = '/themes/colorlib-cool-admin';
