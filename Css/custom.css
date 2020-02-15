@@ -195,3 +195,28 @@ body
     cursor: pointer;
     */
 }
+
+.table-data3 thead tr th, .table-data3 tbody tr td {
+    padding: 12px;
+}
+
+.table-data3 thead tr th:last-child, .table-data3 tbody tr td:last-child
+{
+    padding-right: 24px;
+}
+
+.table-data3 thead tr th:first-child, .table-data3 tbody tr td:first-child
+{
+    padding-left: 24px;
+}
+
+.table-data3 thead tr th
+{
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.au-btn
+{
+    padding: 0px 20px;
+}
