@@ -220,3 +220,14 @@ body
 {
     padding: 0px 20px;
 }
+
+@media (max-width: 767px)
+{
+    .header-button-item {
+        font-size: 30px;
+    }
+}
+
+.sub-header-mobile-2 .header__tool .setting-dropdown {
+    top: 53px;
+}
