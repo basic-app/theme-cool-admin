@@ -70,10 +70,6 @@ body
     color: #ccc;
 }
 
-.header-mobile-2.header-mobile .navbar-mobile {
-    top: 66px;
-}
-
 .table-data3 tbody tr td:last-child {
     padding-right: 20px;
 }
