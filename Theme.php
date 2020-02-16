@@ -13,6 +13,10 @@ class Theme extends \PhpTheme\Themes\CoolAdmin\Theme
 
     const FORM = Form::class;
 
+    const GRID_CELL_BOOLEAN = GridCellBoolean::class;
+
+    const GRID_HEADER_BOOLEAN = GridHeaderBoolean::class;
+
     public function beginLayout(array $params = [])
     {
         $this->head .= HtmlHelper::linkCss($this->baseUrl . '/custom.css');
