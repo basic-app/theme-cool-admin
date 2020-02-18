@@ -6,7 +6,7 @@
  */
 namespace BasicApp\Themes\CoolAdmin;
 
-class GridHeaderBoolean extends \PhpTheme\Themes\CoolAdmin\GridHeaderBoolean
+class GridHeaderBoolean extends \PhpTheme\Themes\Bootstrap4\GridHeaderBoolean
 {
 
     const GRID_CELL = GridCellBoolean::class;
