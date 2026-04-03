@@ -17,7 +17,12 @@ if (class_exists(SystemEvents::class))
             return;
         }
 
-        CliHelper::downloadToFile('https://codeload.github.com/puikinsh/CoolAdmin/zip/master', $themeDir . '.zip');
+        // https://codeload.github.com/puikinsh/CoolAdmin/zip/master
+
+        CliHelper::downloadToFile(
+            'https://github.com/puikinsh/CoolAdmin/archive/b5e3b0e154083e982530ab57b1bcc68138c15a42.zip', 
+            $themeDir . '.zip'
+        );
         
         CliHelper::zipExtractTo($themeDir . '.zip', $themeDir);
         
