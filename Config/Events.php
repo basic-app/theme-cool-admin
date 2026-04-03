@@ -17,8 +17,6 @@ if (class_exists(SystemEvents::class))
             return;
         }
 
-        // https://codeload.github.com/puikinsh/CoolAdmin/zip/master
-
         CliHelper::downloadToFile(
             'https://github.com/puikinsh/CoolAdmin/archive/b5e3b0e154083e982530ab57b1bcc68138c15a42.zip', 
             $themeDir . '.zip'
@@ -28,17 +26,32 @@ if (class_exists(SystemEvents::class))
         
         CliHelper::delete($themeDir . '.zip');
         
-        CliHelper::copy($themeDir . DIRECTORY_SEPARATOR . 'CoolAdmin-master/css', $themeDir . DIRECTORY_SEPARATOR . 'css');
+        CliHelper::copy(
+            $themeDir . DIRECTORY_SEPARATOR . 'CoolAdmin-b5e3b0e154083e982530ab57b1bcc68138c15a42/css', 
+            $themeDir . DIRECTORY_SEPARATOR . 'css'
+        );
         
-        CliHelper::copy($themeDir . DIRECTORY_SEPARATOR . 'CoolAdmin-master/fonts', $themeDir . DIRECTORY_SEPARATOR . 'fonts');
+        CliHelper::copy(
+            $themeDir . DIRECTORY_SEPARATOR . 'CoolAdmin-b5e3b0e154083e982530ab57b1bcc68138c15a42/fonts', 
+            $themeDir . DIRECTORY_SEPARATOR . 'fonts'
+        );
         
-        CliHelper::copy($themeDir . DIRECTORY_SEPARATOR . 'CoolAdmin-master/images', $themeDir . DIRECTORY_SEPARATOR . 'images');
+        CliHelper::copy(
+            $themeDir . DIRECTORY_SEPARATOR . 'CoolAdmin-b5e3b0e154083e982530ab57b1bcc68138c15a42/images', 
+            $themeDir . DIRECTORY_SEPARATOR . 'images'
+        );
         
-        CliHelper::copy($themeDir . DIRECTORY_SEPARATOR . 'CoolAdmin-master/js', $themeDir . DIRECTORY_SEPARATOR . 'js');
+        CliHelper::copy(
+            $themeDir . DIRECTORY_SEPARATOR . 'CoolAdmin-b5e3b0e154083e982530ab57b1bcc68138c15a42/js', 
+            $themeDir . DIRECTORY_SEPARATOR . 'js'
+        );
         
-        CliHelper::copy($themeDir . DIRECTORY_SEPARATOR . 'CoolAdmin-master/vendor', $themeDir . DIRECTORY_SEPARATOR . 'vendor');
+        CliHelper::copy(
+            $themeDir . DIRECTORY_SEPARATOR . 'CoolAdmin-b5e3b0e154083e982530ab57b1bcc68138c15a42/vendor', 
+            $themeDir . DIRECTORY_SEPARATOR . 'vendor'
+        );
         
-        CliHelper::delete($themeDir . DIRECTORY_SEPARATOR . 'CoolAdmin-master');
+        CliHelper::delete($themeDir . DIRECTORY_SEPARATOR . 'CoolAdmin-b5e3b0e154083e982530ab57b1bcc68138c15a42');
         
         CliHelper::copy(dirname(__DIR__) . '/Css/custom.css', $themeDir . DIRECTORY_SEPARATOR . 'custom.css');
     });
